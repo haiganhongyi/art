@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "面对恐惧"
-tags: [book]
+tags: [book, psychology]
 published: true
 date: 2012-01-16
 ---
