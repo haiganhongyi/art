@@ -55,14 +55,14 @@ p {
 
 a {     
     text-decoration: none; 
-    border-bottom: 2px solid #ccc;
+     border-bottom: 2px solid #ccc; 
 }
 
 
 a:link { text-decoration: none; }
 a:hover { 
     color: #33f;
-    border-bottom: 2px solid #66a;
+    border-bottom: 2px solid #66a; 
 }
 a:visited { text-decoration: none; }
 
@@ -354,15 +354,22 @@ ul.posts span {
 span#poweredby {
 	float: right;
 	text-align: right;
-	color:#FFFFFF;
-	padding-bottom:20px;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+	
 }
 
 span#copyright {
 	float: left;
 	text-align: left;
-	color:#FFFFFF;
-	padding-bottom:20px;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+	
+}
+
+span#poweredby a, span#copyright  a{
+	color:#00EE00;
+	border-bottom:0px;
 }
 
 h2.title{
