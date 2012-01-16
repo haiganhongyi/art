@@ -1,0 +1,7 @@
+node_modules/*
+_site/*
+*.swp
+_data/*
+settings.py
+*.pyc
+env/*

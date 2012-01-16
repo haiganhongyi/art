@@ -1,14 +1,13 @@
 ---
 layout: default
+title: 全部文章
 ---
-
-
 <article id="index">
-    <h2>近期文章</h2>
+    <h2>{{ page.title }}</h2>
+    <p>你要找的文章也许在这儿：</p>
     <ul class="posts">
-        {% for post in site.posts limit:15 %}
+        {% for post in site.posts %}
             {% include item.html %}
         {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/archives/">全部文章</a>
 </article>
