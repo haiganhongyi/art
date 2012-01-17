@@ -55,7 +55,7 @@ p {
 
 a {     
     text-decoration: none; 
-     border-bottom: 2px solid #ccc; 
+    border-bottom: 2px solid #ccc; 
 }
 
 
@@ -340,7 +340,7 @@ h2.title{
 	font-size:2em;
 }
 
-section.site > section.content article, article.post, section#comments.comments, aside.sidebar{
+section.site > section.content article, article.post, section#comments.comments, aside.sidebar, section#counter img{
 	-webkit-border-radius: 8px; 
 	-moz-border-radius: 8px; 
 	border-radius: 8px;
@@ -349,6 +349,17 @@ section.site > section.content article, article.post, section#comments.comments,
 
 article#index h2{
 	font-weight: bold;
+}
+
+a.imglink,a:hover.imglink{
+	border-bottom: 0px; 
+	float:left;
+	margin-right:10px;
+	text-indent: 0em;
+}
+
+section.content article p{
+	text-indent: 2em;
 }
 
 /*

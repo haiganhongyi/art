@@ -5,9 +5,7 @@ tags: movie
 published: true
 date: 2012-01-16
 ---
-
-
-[![蔓延](http://img3.douban.com/mpic/s3836008.jpg)](http://movie.douban.com/subject/3011044/)
+<a class="imglink" href="http://movie.douban.com/subject/3011044/" target="_blank"><img src="http://img3.douban.com/mpic/s3836008.jpg" title="《蔓延》" alt="《蔓延》"/></a>
 
 今天宅在家里看日剧看电影，看了电影《蔓延》。《蔓延》的另一个名字叫《情圣终结者》。
 故事讲的是住在美国洛杉矶的一个帅哥，天生好手，靠吃软饭度日，后来遇到了个女玩家，并爱上了她。
