@@ -26,6 +26,9 @@ layout: default
             <a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
         </li>
         {% endif %}
+		
+		<li class="center"><a href="{{ site.baseurl }}/archives/">全部文章</a></li>
+		
         {% if page.next.url %}
         <li class="right">
             <a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>

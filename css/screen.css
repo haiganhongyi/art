@@ -137,6 +137,11 @@ section.site > section.content nav.page-navigation ul li.left {
 section.site > section.content nav.page-navigation ul li.right {
     right: 0.75em;
 }
+
+section.site > section.content nav.page-navigation ul li.center {
+    left: 23em;
+}
+
 section.site > section.content nav.page-navigation ul li a {
     border-color: #666666;
     color: #DDDDDD;
@@ -234,7 +239,7 @@ aside.sidebar section a:hover {
 }
 aside.sidebar section img.block {
     display: block; 
-    width: 100%;
+    width: 70%;
     margin: 1em auto 1em auto;
     border: 1px solid #666666;
 }
