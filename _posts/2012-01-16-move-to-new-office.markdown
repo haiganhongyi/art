@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "办公室搬家记"
+title: "公司搬家记"
 tags: diary
 published: true
 date: 2012-01-16

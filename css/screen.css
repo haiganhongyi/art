@@ -38,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
-    font-family: tahoma;
+    font-family: Microsoft YaHei,tahoma, serif;
     font-weight: normal;
 }
 
@@ -98,11 +98,12 @@ section.site > footer {
 }
 
 section.site > header h1 {
-    font-family: monospace;
+    font-family: monospace, serif;
     font-size: 28px;
     font-weight: bold;
     float: left;
     margin: 0 0.5em 0 0;
+	padding-top:5px;
 }
 section.site > header h1 a {
     color: #ddd;
@@ -182,7 +183,7 @@ article.post > time {
 }
 
 section.site > section.content article  ul.tags:before {
-    content: "Tags: ";
+    content: "标签： ";
 }
 section.site > section.content article  ul.tags {
     display: block;
@@ -210,32 +211,34 @@ section.site > footer > img {
 aside.sidebar {
     width: 20em;
     position: absolute;
-    color: #eee;
-    background-color: #0C304B;
+    color: 	#FFFFFF;
+    background-color: #528B8B;
     right: 0px;
     top: 3em;
     padding: 0 0.25em;
     margin: 0.25em 0 0 0;
+	font-family: sans-serif,SimSun,YouYuan,arial;
 }
 aside.sidebar section {
     font-size: 0.85em;
     margin: 1em 1.5em 2em 1.5em;
 }
 aside.sidebar section h3 {
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #E0EEEE;
     font-family: Microsoft YaHei, SimSun,YouYuan,arial;
     font-size: 1.325em;
     padding-bottom: 0.25em;
 	color:#00CDCD;
 	font-weight:bold;
 }
-aside.sidebar section a {
-    border-color: #666;
-    color: #DDD;
+aside.sidebar section a {   
+    color: solid;
+	border-bottom:2px dashed #87CEEB;
+	font-family: serif,sans-serif,SimSun,arial;
 }
-aside.sidebar section a:hover {
-    border-color: #66A;
+aside.sidebar section a:hover {   
     color: #DDF;
+	border-bottom:2px dashed #7CFC00;
 }
 aside.sidebar section img.block {
     display: block; 
@@ -340,9 +343,19 @@ span#poweredby a, span#copyright  a{
 	border-bottom:0px;
 }
 
+
+section#weibo{
+	text-align:center;
+	
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+}
+
+
 h2.title{
 	font-weight:bold;
-	font-size:2em;
+	font-size:1.5em;
 }
 
 section.site > section.content article, article.post, section#comments.comments, aside.sidebar, section#counter img{
@@ -361,6 +374,7 @@ a.imglink,a:hover.imglink{
 	float:left;
 	margin-right:10px;
 	text-indent: 0em;
+	
 }
 
 section.content article p{
