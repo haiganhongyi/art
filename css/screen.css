@@ -353,6 +353,10 @@ span#poweredby a, span#copyright  a{
 	border-bottom:0px;
 }
 
+span#poweredby a:hover, span#copyright  a:hover{
+	color:#FFFF00;
+	
+}
 
 section#weibo{
 	text-align:center;
