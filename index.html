@@ -23,7 +23,7 @@ layout: index
 					{% if post.description %} 
 						 <p>{{ post.description }}</p>
 					{% else %}
-						<p>{{ post.content | strip_html | truncate: 140, '' }}</p>
+						<p>{{ post.content | strip_html | truncatewords: 2 }}</p>
 					{% endif %}
 					<p class="more"><a href="{{ post.url }}">阅读全文...</a></p>
 				</div>

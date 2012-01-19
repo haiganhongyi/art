@@ -2,7 +2,7 @@
 layout: post
 title: "电影《蔓延》"
 tags: movie
-description: 本文是《蔓延》的影评。
+description: 
 published: true
 date: 2012-01-16
 ---
