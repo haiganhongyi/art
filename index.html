@@ -1,14 +1,31 @@
 ---
-layout: default
+layout: index
 ---
+
 
 
 <article id="index">
     <h2>近期文章</h2>
-    <ul class="posts">
-        {% for post in site.posts limit:15 %}
-            {% include item.html %}
+    
+        {% for post in site.posts limit:4 %}
+			<div>
+				<p class="excerpt">	
+					
+					  <a href="{{ post.url }}">{{ post.title }}	</a>				
+					
+					  <span class="post-date" >
+						Posted on {{ post.date | date_to_string }}			 
+					  </span>	
+					
+				</p>
+				
+				<div class="excerpt-post">
+					<p>{{ post.content | strip_html | truncate: 100 }}</p>
+					<p class="more"><a href="{{ post.url }}">阅读全文...</a></p>
+				</div>
+			</div>
         {% endfor %}
-    </ul>
-    <a href="{{ site.baseurl }}/archives/">全部文章</a>
+  
+    <center><a href="{{ site.baseurl }}/archives/">全部文章</a></center>
 </article>
+

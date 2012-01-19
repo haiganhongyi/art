@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 
 html{
 	background-color: #162e41;
+	
 }
 
 html, body {
@@ -103,7 +104,7 @@ section.site > header h1 {
     font-weight: bold;
     float: left;
     margin: 0 0.5em 0 0;
-	padding-top:5px;
+	padding-top:0px;
 }
 section.site > header h1 a {
     color: #ddd;
@@ -144,8 +145,15 @@ section.site > section.content nav.page-navigation ul li.center {
 }
 
 section.site > section.content nav.page-navigation ul li a {
-    border-color: #666666;
+    border-bottom: 2px dashed #666666;
     color: #DDDDDD;
+    font: 12px tahoma;    
+    padding: 0.25em;
+}
+
+section.site > section.content nav.page-navigation ul li a:hover{
+    border-bottom: 2px dashed #BFEFFF;
+    color: #C0FF3E;
     font: 12px tahoma;    
     padding: 0.25em;
 }
@@ -215,8 +223,9 @@ aside.sidebar {
     background-color: #528B8B;
     right: 0px;
     top: 3em;
-    padding: 0 0.25em;
-    margin: 0.25em 0 0 0;
+
+    padding: 0 0.25em 0.25em 0;
+    margin: 0.5em 0 0.5em 0;
 	font-family: sans-serif,SimSun,YouYuan,arial;
 }
 aside.sidebar section {
@@ -231,6 +240,7 @@ aside.sidebar section h3 {
 	color:#00CDCD;
 	font-weight:bold;
 }
+
 aside.sidebar section a {   
     color: solid;
 	border-bottom:2px dashed #87CEEB;
@@ -353,23 +363,76 @@ section#weibo{
 }
 
 
+.post-date{
+	float:right;
+	color:#AAAAAA;
+	font-size:%80;
+
+
+}
+
+p.excerpt a{
+	font-family:Georgia, sans-serif,serif, Arial;
+	border-bottom:1px dashed;
+	font-weight:bold;
+}
+
+p.more{
+
+	text-align:right;
+	
+}
+
+p.more a{
+	color:black;
+	background-color:#EBEBEB;
+	border-bottom:0px;
+	padding:0.4em;
+	
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+
+p.more a:hover{
+	color:white;
+	background-color:#1863A1;
+	color:0px;
+}
+
 h2.title{
 	font-weight:bold;
 	font-size:1.5em;
 }
 
-section.site > section.content article, article.post, section#comments.comments, aside.sidebar, section#counter img{
+section.site > section.content article, article.post, section#comments.comments, aside.sidebar, section#counter img, #navigation{
 	-webkit-border-radius: 8px; 
 	-moz-border-radius: 8px; 
 	border-radius: 8px;
 
 }
 
-article#index h2{
+article#index h2, article.notice h2{
 	font-weight: bold;
 }
 
-a.imglink,a:hover.imglink{
+
+ul.posts>h3 a{
+	border-bottom: 0px;	
+}
+
+section.content article  p.excerpt{
+	text-indent:0em
+}
+
+div.excerpt-post{
+
+	margin-bottom:12px;
+	margin-top:12px;
+}
+
+
+a.imglink, a:hover.imglink{
 	border-bottom: 0px; 
 	float:left;
 	margin-right:10px;
@@ -381,23 +444,35 @@ section.content article p{
 	text-indent: 2em;
 }
 
-/*
+
+div#navigation{
+    width: 20em;
+    position: absolute;
+    color: 	#FFFFFF;
+    background-color: #528B8B;
+    right: 0px;
+    top: 1em;
+    padding: 0 0.25em;
+    margin: 0.25em 0 0 0;
+
+}
+
 #nav {
-	margin: 10px 0px 10px 0px; 
+	margin: 0px 0px 0px 30px;
+	text-align:center;
 	
 	border: none;
 	list-style-type: none;
 	padding-left: 10px;
-	background-color:
+	
 }
 
 #nav ul{
-
+	
 
 }
 
 #nav li{
-
 	float:left;
 	text-align:center;
 	padding:0px 6px 0px 6px;
@@ -405,8 +480,11 @@ section.content article p{
 }
 
 #nav a{
+	text-align: right;
 	text-decoration:none;
 	color:#00EE00;
+	background-color: green;
+	border-bottom:0px;
 }
 
 #nav a:link, #nav a:visited{
@@ -420,5 +498,4 @@ section.content article p{
 	color:#FFFFFF;
 }
 
-*/
 

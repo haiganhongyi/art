@@ -4,6 +4,8 @@ title: 标签
 lead: These tags are for quick browsing, not for anything else
 ---
 
+<section class="content">
+
 {% for tag in page.tags %}
     <h4><a href="/tags/{{ tag | replace:' ', '-' | downcase }}" name="{{ tag | replace:' ','-' | downcase }}">{{ tag }}</a></h4>
     <ul>
@@ -12,3 +14,5 @@ lead: These tags are for quick browsing, not for anything else
         {% endfor %}
     </ul>
 {% endfor %}
+
+</section>
