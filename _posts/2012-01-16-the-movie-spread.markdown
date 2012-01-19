@@ -3,7 +3,6 @@ layout: post
 title: "电影《蔓延》"
 tags: movie
 description: 
-published: true
 date: 2012-01-16
 ---
 <a class="imglink" href="http://movie.douban.com/subject/3011044/" target="_blank"><img src="http://img3.douban.com/mpic/s3836008.jpg" title="《蔓延》" alt="《蔓延》"/></a>
