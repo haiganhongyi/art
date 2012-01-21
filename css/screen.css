@@ -200,6 +200,7 @@ section.site > section.content article  ul.tags:before {
 }
 section.site > section.content article  ul.tags {
     display: block;
+	padding-left:0;
     margin: 0.25em 0 0.25em 0;
     font-size: 0.85em;
 }
@@ -227,7 +228,7 @@ aside.sidebar {
     color: 	#FFFFFF;
     background-color: #528B8B;
     right: 0px;
-    top: 3em;
+    top: 3.3em;
 
     padding: 0 0.25em 0.25em 0;
     margin: 0.5em 0 0.5em 0;
@@ -502,6 +503,51 @@ div#navigation{
     padding: 0 0.25em;
     margin: 0.25em 0 0 0;
 
+}
+
+article.post ol, article.post ul{
+	padding-left:1.5em;
+
+}
+
+
+
+.datalist{
+    border:1px solid #007eff;
+	font-family:sans-serif, Arial;
+    border-collapse:collapse;
+	align:center;
+}
+
+
+.datalist table{
+	align:center;
+}
+
+.datalist caption{
+	font-weight:bold;
+	text-align:center;
+}
+
+.datalist th{
+    border:1px solid #429fff;
+    background-color:#d2e8ff;
+    font-weight:bold;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+}
+
+.datalist td{
+      border:1px solid #429fff;
+      text-align:left;
+      padding:4px;
+}
+
+.datalist tr:hover{
+    background-color:#c4e4fe;
 }
 
 #nav {

@@ -2,7 +2,7 @@ meta:
     site_title: "雁起平沙的文艺博客"
     site_subtitle: "人生就是不停的战斗"
     site_language: "zh-cn"
-    absolute_baseurl: http://art.yanping.me/
+    absolute_baseurl: http://art.yanping.me
     domain: yanping.me
     author:
         full_name:Chen Yanping
