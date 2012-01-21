@@ -84,8 +84,8 @@ section.site {
 
 section.site > header {
     width: 50em;
-    padding: 0.25em;
-    margin: 1.5em 0 0 0;
+    padding: 0.2em;
+    margin: 2em 0 0 0;
 }
 
 section.site > section.content {
@@ -100,21 +100,26 @@ section.site > footer {
 
 section.site > header h1 {
     font-family: monospace, serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     float: left;
-    margin: 0 0.5em 0 0;
-	padding-top:0px;
+    margin: 0em 0.5em 0 0;
+	padding-top:5px;
 }
 section.site > header h1 a {
     color: #ddd;
     text-decoration: none;
     border: none;
 }
+
+section.site > header h1 a:hover{
+    color: #7FFFD4;
+}
+
 section.site > header h2 {
-    font-size: 11px;
+    font-size: 14px;
     color: #999;
-    margin: 0;
+    margin: 2px;
 }
 
 section.site > section.content nav.page-navigation {
@@ -381,6 +386,12 @@ p.excerpt a{
 	font-weight:bold;
 }
 
+p.excerpt a:hover{
+	color:#00B2EE;
+	border-bottom:1px dashed #00B2EE;
+	
+}
+
 p.more{
 
 	text-align:right;
@@ -401,7 +412,7 @@ p.more a{
 p.more a:hover{
 	color:white;
 	background-color:#1863A1;
-	color:0px;
+	
 }
 
 h2.title{
@@ -448,6 +459,38 @@ section.content article p{
 	text-indent: 2em;
 }
 
+
+
+#post-bottom{
+	height:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:15px;
+
+}
+
+span.turn-back  a{
+	float:right;
+	text-align:top;
+	padding:2px;
+	margin-bottom:10px;
+	border-bottom:0px;
+	background-color:#EBEBEB;
+	
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+
+}
+
+span.turn-back  a:hover{
+	color:white;
+	background-color:#1863A1;	
+}
+
+.jiathis_txt{
+	color:gray;
+}
 
 div#navigation{
     width: 20em;
@@ -501,5 +544,3 @@ div#navigation{
 	text-decoration:none;	
 	color:#FFFFFF;
 }
-
-
