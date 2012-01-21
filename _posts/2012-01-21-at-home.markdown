@@ -3,7 +3,6 @@ layout: post
 title: "回家"
 tags: [essay, dance]
 description: 
-published: true
 date: 2012-01-21
 ---
 

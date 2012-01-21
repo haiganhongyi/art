@@ -2,6 +2,8 @@
 layout: default
 ---
 
+
+
 <section class="content">
 
 <article class="post">
@@ -14,9 +16,9 @@ layout: default
             <li><a href="{{ site.baseurl }}/tag/{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
         {% endfor %}
     </ul>
-	{% endif %}
-	
-    {{ content }}
+	{% endif %}	
+
+    {{ content }}	
 	
 	<div id="post-bottom">
 		<!-- JiaThis Button BEGIN -->
