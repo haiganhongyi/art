@@ -466,16 +466,13 @@ section.content article p{
 	height:20px;
 	margin-top:10px;
 	margin-bottom:10px;
-	padding:15px;
+	padding:5px;
 
 }
 
 span.turn-back  a{
 	float:right;
-	text-align:top;
-	padding:2px;
-	margin-bottom:10px;
-	border-bottom:0px;
+	
 	background-color:#EBEBEB;
 	
 	-webkit-border-radius: 4px; 
@@ -491,6 +488,11 @@ span.turn-back  a:hover{
 
 .jiathis_txt{
 	color:gray;
+}
+
+#ckepop{
+	height:25px;
+
 }
 
 div#navigation{
