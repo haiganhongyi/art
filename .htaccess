@@ -1,3 +1,4 @@
 ﻿RewriteEngine on
-RewriteCond %{HTTP_HOST} ^yanping\.github\.com\/art$ 
-RewriteRule ^/?$ "http\:\/\/art\.yanping\.me" [R=301,L]
+RewriteCond %{HTTP_HOST} ^yanping\.github\.com\/art$ [OR]
+RewriteCond %{HTTP_HOST} ^chen\.yanping\.me\/art$
+RewriteRule ^(.*)$ "http\:\/\/art\.yanping\.me" [R=301,L]
