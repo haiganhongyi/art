@@ -28,11 +28,18 @@
         
         <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" 
             type="text/css" media="screen, projection" />
-
-     
+			
+		{% unless page.title %}
+			{% include browser.html %}
+		{% endunless %}
         
     </head>
+	
+	{% unless page.title %}
+	<body onload="detectBrowser()">
+	{% else %}	
     <body>
+	{% endunless %}
 
         <section class="site">
 

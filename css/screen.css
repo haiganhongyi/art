@@ -195,9 +195,12 @@ article.post > time {
     display: block;
 }
 
+/*
 section.site > section.content article  ul.tags:before {
     content: "标签： ";
 }
+*/
+
 section.site > section.content article  ul.tags {
     display: block;
 	padding-left:0;
