@@ -16,5 +16,7 @@ markdown: rdiscount
 pygments: false
 permalink: /:year/:month/:day/:title
 
+lsi: true
+
 debug: false
 
