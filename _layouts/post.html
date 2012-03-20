@@ -22,9 +22,6 @@ layout: default
     {{ content }}	
 
 
-	{% if page.related %}
-		{% include related.html %}
-	{% endif %}
 	
 	<div id="post-bottom">
 		<!-- JiaThis Button BEGIN -->
@@ -39,7 +36,7 @@ layout: default
 			<a class="jiathis_counter_style"></a>
 			
 			<span class="turn-back">
-			<a href="{{site.baseurl}}">➥返回主页</a>
+			<a href="{{site.baseurl}}/">➥返回主页</a>
 			</span>
 		</div>
 		<!-- JiaThis Button END -->	
