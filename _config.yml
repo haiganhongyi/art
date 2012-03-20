@@ -10,7 +10,7 @@ meta:
         name: ypchen
         email: chen@yanping.me
 
-baseurl: /
+#baseurl: /
 
 markdown: rdiscount
 
