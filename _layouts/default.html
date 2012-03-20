@@ -5,26 +5,18 @@
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.meta.site_title }}</title>
         <meta name="author" content="{{ site.meta.author.fullname }}" />
 
-        {% if page.tag %}
-            <link href="{{ site.absolute_baseurl }}/tag/{{page.tag | replace:' ', '-' | downcase }}/atom.xml" 
-                rel="alternate" title="{{ page.title }} - {{ site.meta.site_title }} (Atom)" 
-                type="application/atom+xml" />
-        {% else %}
+
             <link href="atom.xml" rel="alternate" 
                 title="Atom" type="application/atom+xml" />
             <link href="rss.xml" rel="alternate" 
                 title="RSS" type="application/rss+xml" />
-        {% endif %}
-		
-		<LINK rel=icon type=image/x-icon href="/favicon.ico">
-		<LINK rel="shortcut icon" type=image/x-icon href="/favicon.ico">
+
+		<LINK rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">
         
 		
 		<!--[if lt IE 9]>
-			<script src="/js/html5.js" type="text/javascript"></script>	 
-        <![endif]-->   
-
-
+			<script src="{{site.baseurl}}/js/html5.js" type="text/javascript"></script>	 
+        <![endif]--> 
         
         <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" 
             type="text/css" media="screen, projection" />
@@ -32,8 +24,7 @@
 		{% unless page.title %}
 			{% include browser.html %}
 			{% include redirect-url.html %}
-		{% endunless %}
-		
+		{% endunless %}		
         
     </head>
 	
@@ -46,7 +37,7 @@
         <section class="site">
 
             <header>
-                <h1><a href="/">{{ site.meta.site_title }}</a></h1>
+                <h1><a href="{{site.baseurl}}">{{ site.meta.site_title }}</a></h1>
                 <h2>{{ site.meta.site_subtitle }}</h2>         	
 		
             </header>
@@ -57,10 +48,16 @@
 			{% include footer.html %} 
 
             <aside class="sidebar">
-                {% include about-me.html %} 
-				{% include tag-sidebar.html %}
-				{% include see-also.html %}  
+				{% unless page.title %}
+					{% include about-me.html %} 
+				{% endunless %}
 				
+				{% if page.title %}
+					{% include recent.html %}
+				{% endif %}
+				
+				{% include tag-sidebar.html %}
+				{% include see-also.html %} 				
 				{% include bottom.html %}  
                          
             </aside>
@@ -69,12 +66,12 @@
 
 	{% include ga.html %}	
 	
-	{% if page.title %}
+	{% if page.comment %}
 		<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
 		<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1558027" charset="utf-8"></script>
+		
+		{% include disqus.html %}
+		
 	{% endif %}
-
-	{% include disqus.html %}
-
     </body>
 </html>

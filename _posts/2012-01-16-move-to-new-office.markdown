@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "公司搬家记"
-tags: diary
+tags: 日记
+comment: true
 published: true
 date: 2012-01-16
 ---

@@ -1,8 +1,10 @@
+destination: F:\xampp\htdocs\ypchen
+
 meta:
     site_title: "雁起平沙的文艺博客"
     site_subtitle: "人生就是不停的战斗"
     site_language: "zh-cn"
-    absolute_baseurl: http://art.yanping.me
+    absolute_baseurl: http://art.yanping.me/
     domain: yanping.me
     author:
         full_name:Chen Yanping
@@ -10,21 +12,19 @@ meta:
         name: ypchen
         email: chen@yanping.me
 
-tag_dir: tag
-# baseurl: /
+baseurl: /ypchen
+
 markdown: rdiscount
 
-url: http://art.yanping.me
-
-#maruku:
-#    use_divs: true
+# maruku:
+#   use_divs: true
 #    use_tex: true
-#   png_engine : blahtex
-#   png_dir    : images/latex/
-#   png_url    : /images/latex/
+#    png_engine : blahtex
+#    png_dir    : images/latex/
+#    png_url    : /images/latex/
 
 pygments: false
-permalink: /:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
 
 disqus_short_name: ypchenstory
 
