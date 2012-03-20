@@ -1,4 +1,0 @@
--e git+https://github.com/lmorchard/disqus-python.git#egg=disqus-python
-pyyaml
-isodate
-pytz

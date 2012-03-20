@@ -165,7 +165,7 @@ list-style-type:none;
 }
 
 .post-date {
-color:#AAA;
+color:#B8B8B8;
 float:right;
 font-size:%80;
 }
@@ -257,11 +257,11 @@ border-bottom:1px dashed #00B2EE;
 color:#00B2EE;
 }
 
-p.more {
+.more {
 text-align:right;
 }
 
-p.more a {
+.more a {
 -moz-border-radius:4px;
 -webkit-border-radius:4px;
 background-color:#EBEBEB;
@@ -271,7 +271,7 @@ color:#000;
 padding:.4em;
 }
 
-p.more a:hover,span.turn-back a:hover {
+.more a:hover {
 background-color:#1863A1;
 color:#FFF;
 }
@@ -453,14 +453,6 @@ padding-bottom:20px;
 text-align:left;
 }
 
-span.turn-back a {
--moz-border-radius:4px;
--webkit-border-radius:4px;
-background-color:#EBEBEB;
-border-radius:4px;
-float:right;
-padding:2px;
-}
 
 
 
