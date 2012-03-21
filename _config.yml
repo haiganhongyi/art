@@ -12,7 +12,7 @@ meta:
 
 #baseurl: /base
 
-markdown: rdiscount
+markdown: kramdown
 
 # markdown: maruku
 # maruku:

@@ -11,7 +11,7 @@
             <link href="rss.xml" rel="alternate" 
                 title="RSS" type="application/rss+xml" />
 
-		<LINK rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">
+		<link rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">
         
 		
 		<!--[if lt IE 9]>
@@ -22,6 +22,8 @@
             type="text/css" media="screen, projection" />
 			
 		<script src="{{site.baseurl}}/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script type=text/javascript src="{{site.baseurl}}/js/scrolltop.js"></script>
+
 		
 		{% unless page.title %}
 			{% include browser.html %}
@@ -35,6 +37,11 @@
 	{% else %}	
     <body>
 	{% endunless %}
+	
+		<div style="display: none" id="goTopBtn">
+			<img border=0 class="topBtn" title="返回顶部" src="{{site.baseurl}}/images/go2top.jpg">
+		</div>
+		<script type=text/javascript>goTopEx();</script>
 
         <section class="site">
 

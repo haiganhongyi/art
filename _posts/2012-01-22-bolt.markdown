@@ -8,7 +8,7 @@ description:
 date: 2012-01-22
 ---
 
-<a class="imglink" href="http://movie.douban.com/subject/1793912/" target="_blank"><img src="http://img3.douban.com/mpic/s3276635.jpg" /></a>
+<a class="imglink left" href="http://movie.douban.com/subject/1793912/"><img src="http://img3.douban.com/mpic/s3276635.jpg" /></a>
 
 昨天看了《闪电狗》，在我看来是部讲述成长的儿童剧。
 
