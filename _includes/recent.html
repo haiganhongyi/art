@@ -1,11 +1,9 @@
 <section id="recent-post">
     <h3>近期文章</h3>
-<ul class="recent">
-    {% for post in site.posts limit:5 %}
-<li><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | truncate: 14 }}</a> <span class="post-date">{{ post.date | date_to_string }}</span> </li>
-    {% endfor %}
-  </ul>
-
-
+	<ul class="recent">
+		{% for post in site.posts limit:5 %}
+			<li><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | truncate: 14 }}</a> <span class="post-date">{{ post.date | date_to_string }}</span> </li>
+		{% endfor %}
+	</ul>
   
  </section>
