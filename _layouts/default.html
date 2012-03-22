@@ -51,12 +51,7 @@
 		
             </header>
 			
-			{{ content }}			
-            
-
-			{% include footer.html %} 
-
-            <aside class="sidebar">
+			<aside class="sidebar">
 				{% unless page.title %}
 					{% include about-me.html %} 
 				{% endunless %}
@@ -69,7 +64,14 @@
 				{% include see-also.html %} 				
 				{% include bottom.html %}  
                          
-            </aside>
+            </aside>  
+			
+			{{ content }}			
+             
+  
+
+			{% include footer.html %} 
+
 
         </section>
 
