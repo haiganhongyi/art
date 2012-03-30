@@ -491,3 +491,19 @@ a[title*="大图"]{
 
 .left{ float:left}
 .right{float:right}
+
+.db-img img {
+	height:130px;
+	width:96px;
+	padding: 4px;
+	background: #fff;
+	border: solid 1px #ccc;
+	margin: 0px 3px 3px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.db-img a, #douban a{
+	border-bottom:0;
+}
+
