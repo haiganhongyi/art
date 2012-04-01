@@ -8,7 +8,7 @@ layout: default
 
 	<article class="posts">
 		<h2 class="title">{{ page.title }}</h2>
-		<time style="color:gray;" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+		<time class="emphnext" style="color:gray;" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
 		
 		{% if page.tags != empty %}
 		<ul class="tags emphnext">

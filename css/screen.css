@@ -509,15 +509,20 @@ a[title*="大图"]{
 
 /* @group FancyFirst */
 .emphnext + p:first-letter, p.emphfirst:first-letter {
-	font-size: 38px;
-	padding: 0 0.15em 0 0;
+	font-size: 2em;
+	padding: 0 0.1em 0 0;
 	margin:  0.05em 0 -0.15em 0em;
 	line-height: 1em;
 	float: left;
 	
 }
 
+
 section.content article > ul.emphnext + p{
+	text-indent:0;
+}
+
+section.content article > time.emphnext + p{
 	text-indent:0;
 }
 /* @end */
