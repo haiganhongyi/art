@@ -17,12 +17,12 @@ padding:0;
 vertical-align:baseline;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,article.post > time {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,article.posts > time {
 display:block;
 }
 
-article.post ol,article.post ul {
-padding-left:1.5em;
+article.posts ol,article.posts ul {
+ padding-left: 1.5em;
 }
 
 section.site {
@@ -511,10 +511,9 @@ a[title*="大图"]{
 .emphnext + p:first-letter, p.emphfirst:first-letter {
 	font-size: 2em;
 	padding: 0 0.1em 0 0;
-	margin:  0.05em 0 -0.15em 0em;
+	margin:  0.05em 0 -0.15em 1em;
 	line-height: 1em;
 	float: left;
-	
 }
 
 
@@ -526,3 +525,6 @@ section.content article > time.emphnext + p{
 	text-indent:0;
 }
 /* @end */
+
+
+
