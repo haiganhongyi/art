@@ -10,6 +10,8 @@ meta:
         name: ypchen
         email: chen@yanping.me
 
+url: http://art.yanping.me
+
 #baseurl: /base
 
 markdown: kramdown
