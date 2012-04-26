@@ -23,6 +23,7 @@ $(document).ready(function() {
 	});
 	
 	content +="</ul>";
+	$("#blog2-posts-list .loading").remove();
 	$("#blog2-posts-list").append(content);
 			
 });	
