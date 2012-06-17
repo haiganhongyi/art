@@ -427,6 +427,9 @@ section.content article p.excerpt {
 text-indent:0;
 }
 
+section.content article p.noindent{
+	text-indent:0;
+}
 
 
 span#poweredby {
