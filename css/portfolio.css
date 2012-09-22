@@ -42,7 +42,7 @@
 	bottom: -1px;
 	width: 62px;
 	height: 58px;
-	background-image: url('../images/portfolio/zoom.png');
+	background-image: url('../remooz/img/zoom.png');
 }
 
 #thumbs p, .details {
@@ -79,7 +79,7 @@
 	padding: 15px 80px 0;
 	height: 85px;
 	color: #969696;
-	background-image: url('../images/portfolio/overlay.png');
+	background-image: url('../remooz/img/overlay.png');
 	z-index: 10;
 }
 
@@ -109,12 +109,12 @@
 
 .remooz-body .overlay .next {
 	right: 25px;
-	background-image: url('../images/portfolio/next.png');
+	background-image: url('../remooz/img/next.png');
 }
 
 .remooz-body .overlay .prev {
 	left: 25px;
-	background-image: url('../images/portfolio/prev.png');
+	background-image: url('../remooz/img/prev.png');
 }
 
 .remooz-body img {

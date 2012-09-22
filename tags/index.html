@@ -8,21 +8,11 @@ layout: default
 	
 	<div id="tag_cloud">
 	{% for tag in site.tags %}
-	<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+	<a href="javascript:;" title="{{ tag[0] }}" rel="{{ tag[1].size }}" onclick="showTag('{{tag[0]}}')">{{ tag[0] }}</a>
 	{% endfor %}
 	</div>
 
-	<ul class="listing">
-	{% for tag in site.tags %}
-	  <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
-		{% for post in tag[1] %}
-		  <li class="listing-item">
-		  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-		  <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-		  </li>
-		{% endfor %}
-	{% endfor %}
-	</ul> 
+	<div id="show-tag"></div>
 	
 	<div id="post-bottom">
 		<p style="text-align:right" class="more">
@@ -32,3 +22,24 @@ layout: default
 
 	</article>
 </section>
+
+<script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		function showTag(tagStr){
+			$.getJSON("../post.json",function(data){				
+				$('#show-tag').empty(content);				
+				var content ="<h2>分类："+ tagStr +"</h2><ul class=\"posts\">";
+				$.each(data,function(i,item){										
+			   		$.each(item.tags,function(j,tag){
+						if(tag == tagStr)						   
+						content += "<li class=\"listing-item\"><time datetime=\""+ item.date +"\">" + item.date + "</time><a href=\""+item.url+"\">"+ item.title +"</a></li>";
+											
+					});					
+				});				
+				content +="</ul>";		
+				$('#show-tag').append(content);
+			});
+		}
+	</script>
+	
+
