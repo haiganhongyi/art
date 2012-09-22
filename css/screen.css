@@ -73,8 +73,10 @@ margin:2px;
 }
 
 section.site > section.content {
+position: relative;
 margin:1.5em 0 1em;
 width:50em;
+overflow: auto;
 }
 
 section.site > section.content > article > blockquote {
@@ -229,6 +231,11 @@ text-align:center;
 
 article#index h2,article.notice h2,.listing-seperator {
 	font-weight:700;
+}
+
+article#index{
+position: relative;
+overflow: auto;
 }
 
 #post-bottom {
@@ -529,5 +536,8 @@ section.content article > time.emphnext + p{
 }
 /* @end */
 
-
+ul#thumbs{
+    list-style: none outside none;
+	display:block;
+}
 

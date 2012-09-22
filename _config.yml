@@ -31,5 +31,11 @@ disqus_short_name: ypchenstory
 
 lsi: false
 
+      
+css:
+    - /css/screen.css
+    
+js:
+    - /js/jquery-1.7.1.min.js
 
 
