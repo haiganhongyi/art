@@ -541,3 +541,6 @@ ul#thumbs{
 	display:block;
 }
 
+#show-tag{min-height:395px;_height:395px;}
+#show-tag span{font-weight: normal;font-size:14px;color:grey}
+
