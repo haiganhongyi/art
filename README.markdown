@@ -8,9 +8,9 @@
 
 几点重要的修改：
 
+* 用了[展新](http://pizn.me)博客里[一篇文章](http://www.pizn.me/2012/03/01/some-tips-for-jekyll-blog.html)的技巧，在显示文章的时候，侧边栏的最近文章列表里不显示当前文章。（2012-09-25）
 * 原来的分类标签页上显示了所有的分类，自从学会了用getJson来读取json数据，我就想到用这种方法来动态生成分类页，现在已经在这个网站实现了。这样就不需要用ruby的插件了，在纯静态的同时又保持了一定的动态效果。（2012-09-23）
 * 增加了一个合集页（但是我没让它展现在公众面前），用了mootools和remooz的js代码，这个功能我是在<http://appden.github.com/portfolio/>学到的，当时一直没试验成功，后来仔细看代码才知道mootools和jquery不兼容，还好jquery可以用jQuery.noConflict()函数解决冲突。（2012-09-22）
-
 * 采用了[多说](http://duoshuo.com)作为评论系统，提高了加载速度
 * 采用了<http://beiyuu.com>博客里的一个段javascript代码，用jquery动态地给指向博客外的链接添加target="_blank"属性
 * 采用了[阳志平](http://yangzhipingshi.com/)文章里的两点技巧，一个是post页面下面的[分享按钮](http://jiathis.com)，一个是文章首字放大（用了emphnext类）

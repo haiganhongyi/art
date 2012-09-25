@@ -29,8 +29,6 @@ permalink: /blog/:year/:month/:day/:title
 
 disqus_short_name: ypchenstory
 
-lsi: false
-
       
 css:
     - /css/screen.css
