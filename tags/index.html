@@ -7,13 +7,11 @@ layout: default
 	<article id="index">
 	<h2>所有分类标签：</h2>
 	<div id="tag_cloud">
-	{% for tag in site.tags %}
-	<a href="{{site.baseurl}}/tags/?tag={{tag[0] | cgi}}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+	{% for tag in site.tags %}<a href="{{site.baseurl}}/tags/?tag={{tag[0] | cgi}}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 	{% endfor %}
 	</div>
 
-	<div id="show-tag">loading...</div>
-	
+	<div id="show-tag">loading...</div>	
 	<div id="post-bottom">
 		<p style="text-align:right" class="more">
 			<a href="{{site.baseurl}}/">返回主页</a>
@@ -22,8 +20,3 @@ layout: default
 
 	</article>
 </section>
-
-
-
-	
-

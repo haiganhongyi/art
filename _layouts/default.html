@@ -4,39 +4,22 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.meta.site_title }}</title>
         <meta name="author" content="{{ site.meta.author.fullname }}" />
-
-
-            <link href="atom.xml" rel="alternate" 
-                title="Atom" type="application/atom+xml" />
-            <link href="rss.xml" rel="alternate" 
-                title="RSS" type="application/rss+xml" />
-
-		<link rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">
-        
-		
+        <link href="atom.xml" rel="alternate" title="Atom" type="application/atom+xml" />
+        <link href="rss.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+		<link rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">   
 		<!--[if lt IE 9]>
 			<script src="{{site.baseurl}}/js/html5.js" type="text/javascript"></script>	 
         <![endif]--> 
-
-
-
-		{% for css in site.css %}
-			<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
+		{% for css in site.css %}<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
+		{% endfor %}	
+		{% for css in page.css %}<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
 		{% endfor %}
-		
-		{% for css in page.css %}
-			<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
-		{% endfor %}
-
-			<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>
-		
+			<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>		
 		{% unless page.title %}
 			{% include browser.html %}
 			{% include redirect-url.html %}
-		{% endunless %}			
-        
-    </head>
-	
+		{% endunless %}        
+    </head>	
 	{% unless page.title %}
 	<body onload="detectBrowser()">
 	{% else %}	
@@ -68,28 +51,17 @@
 				{% include tag-sidebar.html %}
 				{% include douban.html %}
 				{% include see-also.html %} 				
-				{% include bottom.html %}  
-                         
-            </aside>  
-			
-			{{ content }}			
-             
-  
-
-			{% include footer.html %} 
-
-
+				{% include bottom.html %}                          
+            </aside> 			
+			{{ content }}    
+  			{% include footer.html %} 
         </section>
 		{% for js in page.js %}
 			<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
-
 		{% for js in site.js %}
 			<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
-		
-
-
 		{% include after-foot.html %}
 	
     </body>

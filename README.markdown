@@ -8,6 +8,7 @@
 
 几点重要的修改：
 
+* 在文章列表页使用了[waypoints插件](http://imakewebthings.com/jquery-waypoints/)，实现异步加载文章列表 (2012-10-08)
 * 用了[展新](http://pizn.me)博客里[一篇文章](http://www.pizn.me/2012/03/01/some-tips-for-jekyll-blog.html)的技巧，在显示文章的时候，侧边栏的最近文章列表里不显示当前文章。（2012-09-25）
 * 原来的分类标签页上显示了所有的分类，自从学会了用getJson来读取json数据，我就想到用这种方法来动态生成分类页，现在已经在这个网站实现了。这样就不需要用ruby的插件了，在纯静态的同时又保持了一定的动态效果。（2012-09-23）
 * 增加了一个合集页（但是我没让它展现在公众面前），用了mootools和remooz的js代码，这个功能我是在<http://appden.github.com/portfolio/>学到的，当时一直没试验成功，后来仔细看代码才知道mootools和jquery不兼容，还好jquery可以用jQuery.noConflict()函数解决冲突。（2012-09-22）
