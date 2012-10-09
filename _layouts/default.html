@@ -14,7 +14,7 @@
 		{% endfor %}	
 		{% for css in page.css %}<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
 		{% endfor %}
-			<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>		
 		{% unless page.title %}
 			{% include browser.html %}
 			{% include redirect-url.html %}
@@ -26,28 +26,23 @@
     <body>
 	{% endunless %}
 	
-		<div style="display: none" id="goTopBtn">
+	<div style="display: none" id="goTopBtn">
 			<img border=0 class="topBtn" title="返回顶部" src="{{site.baseurl}}/images/go2top.jpg">
 		</div>
-		<script type=text/javascript>goTopEx();</script>
+		<script type="text/javascript">goTopEx();</script>
 
         <section class="site">
-
             <header>
                 <h1><a href="{{site.baseurl}}/">{{ site.meta.site_title }}</a></h1>
-                <h2>{{ site.meta.site_subtitle }}</h2>         	
-		
-            </header>
-			
+                <h2>{{ site.meta.site_subtitle }}</h2>
+		    </header>			
 			<aside class="sidebar">
 				{% unless page.title %}
 					{% include about-me.html %} 
-				{% endunless %}
-				
+				{% endunless %}				
 				{% if page.title %}
 					{% include recent.html %}
-				{% endif %}
-				
+				{% endif %}				
 				{% include tag-sidebar.html %}
 				{% include douban.html %}
 				{% include see-also.html %} 				
@@ -56,13 +51,10 @@
 			{{ content }}    
   			{% include footer.html %} 
         </section>
-		{% for js in page.js %}
-			<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% for js in page.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
-		{% for js in site.js %}
-			<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% for js in site.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
-		{% include after-foot.html %}
-	
+		{% include after-foot.html %}	
     </body>
 </html>

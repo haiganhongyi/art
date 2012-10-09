@@ -1,14 +1,15 @@
 ---
 layout: default
 title: 全部文章
+initItem: 50
+perPageItem: 100
 ---
 <section class="content">
 	<article id="index">
 		<h2>{{ page.title }}</h2>
-		<p>你要找的文章也许在这儿：</p>
-		
+		<p>你要找的文章也许在这儿：</p>		
 		<ul class="posts">
-		{% for post in site.posts limit:50 %}<li class="listing-item">
+		{% for post in site.posts limit:page.initItem %}<li class="listing-item">
 			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 			<a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		  </li>
@@ -34,14 +35,14 @@ $(document).ready(function() {
 		offset: '100%'
 	};
 	
-	var count = 50;  // 初始文章数
+	var count = {{ page.initItem }};  // 初始文章数
 	var count_sup = 0;  // 循环上界，初始为0
 	$footer.waypoint(function(event, direction) {
 		$footer.waypoint('remove');
 		$('.posts').append($loading);
 		$.getJSON("../post.json",function(data){
 			var content ="";
-			count_sup = count + 50; // 循环上界每次增加50
+			count_sup = count + {{ page.perPageItem }}; // 循环上界每次增加50
 			var delta = 0;          // 局部计数器
 			$.each(data,function(i,item){
 				if(i>= count & i< count_sup){				
