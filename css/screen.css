@@ -540,6 +540,5 @@ ul#thumbs{
 	display:block;
 }
 
-#show-tag{min-height:371px;_height:371px;}
+#show-tag{height: auto !important;_height:300px;min-height:300px;_overflow: visible;}
 #show-tag span{font-weight: normal;font-size:14px;color:grey}
-
