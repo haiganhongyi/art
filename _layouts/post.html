@@ -36,15 +36,14 @@ layout: default
 	</article>
 
 	<nav class="page-navigation">
-		<ul>{% if page.previous.url %}
-			<li class="left">
-				<a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-			</li>{% endif %}			
-			<li class="center"><a href="{{ site.baseurl }}/archives/">文章列表</a></li>			
-			{% if page.next.url %}<li class="right">
-				<a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
-			</li>{% endif %}
-		</ul>
+		{% if page.previous.url %}
+
+		<a class="left" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+			{% endif %}			
+		<a href="{{ site.baseurl }}/archives/">文章列表</a>
+			{% if page.next.url %}
+				<a class="right" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
+			{% endif %}
 	</nav>
 {% if page.comment %}
 <section class="comments" id="comments">

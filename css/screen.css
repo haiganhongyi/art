@@ -126,45 +126,31 @@ padding:1.5em 2em;
 
 section.site > section.content nav.page-navigation {
 background-color:#162e41;
+text-align: center;
 margin:1em 0;
 min-height:2em;
 padding:.25em;
 position:relative;
 }
 
-section.site > section.content nav.page-navigation ul li {
-max-width:60%;
-overflow:hidden;
-position:absolute;
-text-overflow:ellipsis;
-white-space:nowrap;
-}
 
-section.site > section.content nav.page-navigation ul li a {
+section.site > section.content nav.page-navigation  a {
 border-bottom:1px dashed #666;
 color:#DDD;
 font:12px tahoma;
 padding:.25em;
 }
 
-section.site > section.content nav.page-navigation ul li a:hover {
+section.site > section.content nav.page-navigation  a:hover {
 border-bottom:1px dashed #BFEFFF;
 color:#C0FF3E;
 font:12px tahoma;
 padding:.25em;
 }
 
-section.site > section.content nav.page-navigation ul li.center {
-left:23em;
-}
+a.left {float:left}
 
-section.site > section.content nav.page-navigation ul li.left {
-left:.75em;
-}
-
-section.site > section.content nav.page-navigation ul li.right {
-right:.75em;
-}
+a.right {float:right}
 
 aside.sidebar {
 background-color:#528B8B;
@@ -541,4 +527,10 @@ ul#thumbs{
 }
 
 #show-tag{height: auto !important;_height:300px;min-height:300px;_overflow: visible;}
-#show-tag span{font-weight: normal;font-size:14px;color:grey}
+#show-tag span{font-weight: normal;font-size:14px;color:#808080}
+
+.pagination{
+	text-align: center;
+	margin: 1em 0px;
+	position: relative;
+}
