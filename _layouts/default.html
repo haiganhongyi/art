@@ -25,7 +25,7 @@
 	{% include browser-warning.html %}
 	{% include browser.html %}		
 <!--返回顶部按钮-->
-<div id="goTopBtn" style="display:none" title="返回顶部"><a href="javascript:"><img style="border:none" class="topBtn" title="返回顶部" src="{{site.baseurl}}/images/go2top.png"></a></div>
+<div id="goTopBtn" style="display:none" title="返回顶部"><a href="javascript:"><img style="border:none" class="topBtn" title="返回顶部" src="{{site.baseurl}}/images/go2top.png" alt="go2top"/></a></div>
 <script type="text/javascript">goTopEx();</script>
 <!--返回顶部按钮end-->
 
@@ -43,8 +43,7 @@
 				{% endif %}				
 				{% include tag-sidebar.html %}
 				{% include douban.html %}
-				{% include see-also.html %} 				
-				{% include bottom.html %}                          
+				{% include see-also.html %} 				                         
             </aside> 			
 			{{ content }}    
   			{% include footer.html %} 
