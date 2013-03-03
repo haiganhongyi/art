@@ -6,13 +6,15 @@ perPageItem: 100
 ---
 <section class="content">
 	<article id="index">
-		<h2>{{ page.title }}</h2>
-		<p>你要找的文章也许在这儿：</p>		
+		<h2>{{ page.title }}&nbsp;&nbsp;&nbsp;<input id="J_search" class="haigan-input" placeholder="他写了些什么？搜一下！"/></h2>
 		<ul class="posts">
-		{% for post in site.posts limit:page.initItem %}<li class="listing-item">
-			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-			<a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-		  </li>{% endfor %}
+		{% for post in site.posts limit:page.initItem %}
+		<li class="listing-item">
+		<p class="v-date"><span>&#8227;</span><time pubdate="{{ post.date | date: '%b %d, %Y' }}">{{ post.date | date: '%b %d' }}</time></p>
+			<h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
+			<!--<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>--> <span>{{ post.description }}</span>
+		 </li>
+		 {% endfor %}
 		</ul>
 		
 		<div id="post-bottom">

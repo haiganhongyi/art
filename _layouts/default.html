@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.meta.site_title }}</title>
-        <meta name="author" content="{{ site.meta.author.fullname }}" />
+        <meta name="author" content="{{ site.meta.author.full_name }}" />
         <link href="atom.xml" rel="alternate" title="Atom" type="application/atom+xml" />
         <link href="rss.xml" rel="alternate" title="RSS" type="application/rss+xml" />
 		<link rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}/favicon.ico">   
@@ -16,13 +16,13 @@
 		{% endfor %}
 		<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>		
 		{% unless page.title %}
-			{% include redirect-url.html %}
+			{% include redirect-url.html %}<!-- 我把redirect-url.html给注释删除了-->
 		{% endunless %}  
 			
     </head>	
 
 	<body>	
-	{% include browser-warning.html %}
+	{% include browser-warning.html %}<!-- 我把-->
 	{% include browser.html %}		
 <!--返回顶部按钮-->
 <div id="goTopBtn" style="display:none" title="返回顶部"><a href="javascript:"><img style="border:none" class="topBtn" title="返回顶部" src="{{site.baseurl}}/images/go2top.png" alt="go2top"/></a></div>
@@ -36,17 +36,17 @@
 		    </header>			
 			<aside class="sidebar">
 				{% unless page.title %}
-					{% include about-me.html %} 
+					{% include about-me.html %} <!-- 只在首页展示自己-->
 				{% endunless %}				
 				{% if page.title %}
-					{% include recent.html %}
+					{% include recent.html %}<!-- 文章中展示近期文章-->
 				{% endif %}				
-				{% include tag-sidebar.html %}
-				{% include douban.html %}
-				{% include see-also.html %} 				                         
+				{% include tag-sidebar.html %}<!-- 分类标签(字体似乎有点小ul,li)-->
+				{% include douban.html %}<!-- 我的豆瓣-->
+				{% include see-also.html %} <!-- 友情链接-->			                         
             </aside> 			
 			{{ content }}    
-  			{% include footer.html %} 
+  			{% include footer.html %} <!-- footer-->
         </section>
 		{% for js in page.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
