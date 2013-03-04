@@ -17,14 +17,14 @@ perPageItem: 100
 		 <li><span>{{post.description}}<span></li>{% endfor %}
 		</ul>
 		
-		{% for post in site.posts limit:page.initItem %}
+		{% for post in site.posts  %}
 		<article class="">
 		<div>
 				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-		</div>
-			<a href="{{site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+				<a href="{{site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		</div>	
 		<div>
-		{{post.description}}
+		<p>{{post.description}}</p>
 		</div>
 		</article>{% endfor %}
 		
