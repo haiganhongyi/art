@@ -6,28 +6,27 @@ perPageItem: 100
 ---
 <section class="content">
 	<article id="index">
-		<h2>{{ page.title }}&nbsp;&nbsp;&nbsp;<input id="J_search" class="haigan-input" placeholder="他写了些什么？搜一下！"/></h2>
+		<h2>{{ page.title }}</h2>
+		<p>你要找的文章也许在这儿：</p>
 		<ul class="posts">
 		{% for post in site.posts limit:page.initItem %}
 		<li class="listing-item">
-		<p class="v-date"><span>&#8227;</span><time pubdate="{{ post.date | date: '%b %d, %Y' }}">{{ post.date | date: '%b %d' }}</time></p>
-			<h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
-			<!--<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>--> <span>{{ post.description }}</span>
-		 </li>
-		 {% endfor %}
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+			<a href="{{site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		 </li>{% endfor %}
 		</ul>
 		
 		<div id="post-bottom">
 			<p style="text-align:right" class="more">
-				<a href="{{site.baseurl}}/">返回主页</a>
+				<a href="{{site.url}}/">返回主页</a>
 			</p>
 		</div>
 	</article>
 </section>
 
 {% if site.posts.size > page.initItem %}
-<script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/waypoints.min.js" type="text/javascript"></script>
+<script src="{{site.url}}/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{{site.url}}//js/waypoints.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	// 关于waypoint，请看 http://imakewebthings.com/jquery-waypoints/
