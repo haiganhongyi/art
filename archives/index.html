@@ -12,8 +12,7 @@ perPageItem: 100
 		{% for post in site.posts limit:page.initItem %}
 		<li class="listing-item">
 			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-			<a href="{{site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-			<sapn>{{post.description}}</span>
+			<a href="{{site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<sapn>{{post.description}}</span></a>
 		 </li>{% endfor %}
 		</ul>
 		
