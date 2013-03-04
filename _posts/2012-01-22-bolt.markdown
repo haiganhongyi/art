@@ -2,7 +2,7 @@
 layout: post
 title: 闪电狗
 tags: 电影
-description: "这是一部电影，闪电狗有何好？"
+description: "他，在这里安家了一个“文艺”博客；他，记录下了尘世间的点点滴滴......"
 published: true
 comment: true
 description: 
