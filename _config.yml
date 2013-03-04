@@ -14,7 +14,7 @@ meta:
 
 #baseurl: /base
 auto: true
-markdown: kramdown
+markdown: rdiscount
 
 # markdown: maruku
 # maruku:
