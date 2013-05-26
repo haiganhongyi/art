@@ -8,7 +8,6 @@ comment: true
 description: 
 date: 2013-03-22
 ---
-#谢别·别谢#
 谢
 夜瞥
 景连叠
