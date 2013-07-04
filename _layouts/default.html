@@ -35,6 +35,7 @@
                 <h2>{{ site.meta.site_subtitle }}</h2>
 		    </header>			
 			<aside class="sidebar">
+				{% include music.html %}
 				{% unless page.title %}
 					{% include about-me.html %} <!-- 只在首页展示自己-->
 				{% endunless %}				
