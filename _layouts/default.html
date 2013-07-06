@@ -35,7 +35,7 @@
                 <h2>{{ site.meta.site_subtitle }}</h2>
 		    </header>			
 			<aside class="sidebar">
-				{% include music.html %}
+				{% include music.html %}<!-- 音乐播放-->
 				{% unless page.title %}
 					{% include about-me.html %} <!-- 只在首页展示自己-->
 				{% endunless %}				
@@ -43,8 +43,8 @@
 					{% include recent.html %}<!-- 文章中展示近期文章-->
 				{% endif %}				
 				{% include tag-sidebar.html %}<!-- 分类标签(字体似乎有点小ul,li)-->
-				{% include douban.html %}<!-- 我的豆瓣-->
-				{% include see-also.html %} <!-- 友情链接-->			                         
+				{% include douban.html %}<!-- 我的豆瓣,包括豆瓣读书和豆瓣影音-->
+				{% include links.html %} <!-- 友情链接-->			                         
             </aside> 			
 			{{ content }}    
   			{% include footer.html %} <!-- footer-->
