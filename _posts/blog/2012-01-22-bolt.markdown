@@ -1,0 +1,15 @@
+---
+layout: post
+title: 叶问
+tags: 电影
+description: "叶问的武术哲学"
+published: true
+comment: true
+description: 
+date: 2013-03-22
+---
+
+咏春拳的武术哲学：“处世树为模，本固任处枝叶动，处世钱做样，内方还要外边圆。”
+
+### 关于英雄 ###
+中国的武术文化的精髓在于“中庸”，无论太极、咏春从格斗的过程中，都体现得淋淋尽致！
